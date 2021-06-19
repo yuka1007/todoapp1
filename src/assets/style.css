@@ -1,0 +1,162 @@
+* {
+  margin: initial;
+}
+
+#header {
+  height: 68px;
+  background-color: lightblue;
+  display: flex;
+}
+.appNameWrapper span {
+  height: 68px;
+  line-height: 68px;
+  margin-left: 30px;
+}
+.addNew {
+  height: 68px;
+  line-height: 68px;
+  margin-left: 60%;
+  color: black;
+  cursor: pointer;
+}
+.mainContent {
+  width: 50%;
+  height: 100vh;
+  margin: 90px auto 0;
+}
+.todoRow {
+  display: flex;
+  flex-direction: row;
+  border-bottom: lightgray 1px solid;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+.titleWrapper {
+  width: 250px;
+}
+.overFlow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.priority {
+  width: 50px;
+  margin-left: 40px;
+}
+.isDone {
+  margin-left: 90px;
+}
+.isDone select {
+  outline: none;
+  border-radius: 50px;
+  width: 80px;
+  height: 30px;
+  padding: 2px;
+}
+.edit {
+  margin-left: 30px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+}
+.delete {
+  margin-left: 30px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  line-height: 30px;
+  cursor: pointer;
+}
+.roundBtn {
+  border: 1px solid green;
+  border-radius: 50px;
+  text-align: center;
+  background-color: #42b983;
+}
+.delBtn {
+  border: 1px solid red;
+  border-radius: 50px;
+  text-align: center;
+  background-color: lightcoral;
+}
+.roundBtn:hover {
+  cursor: pointer;
+}
+.addNewArea {
+  padding-top: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.74);
+  z-index: 100;
+}
+.inputArea {
+  margin: 0 auto;
+  height: 180px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 100px 30px 30px;
+}
+#titleInput {
+  margin-left: 30px;
+  width: 300px;
+  outline: none;
+}
+#priorityType {
+  margin-left: 45px;
+  width: 200px;
+  outline: none;
+}
+.inputArea div {
+  height: 40px;
+}
+.inputArea input {
+  height: 20px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+}
+#priorityType {
+  height: 30px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  padding: 7px;
+}
+.inputArea div:nth-child(2) {
+  margin-top: 30px;
+}
+.btnWrapper {
+  float: right;
+  margin-right: 19%;
+}
+.btnWrapper button {
+  height: 35px;
+  width: 70px;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+.btnWrapper button:disabled {
+  border: 1px solid darkgray;
+  background-color: darkgray;
+}
+.sortConditions {
+  float: right;
+  margin-right: 20%;
+  margin-top: 30px;
+}
+.sortConditions select {
+  padding: 5px;
+  height: 30px;
+  margin-left: 5px;
+  width: 150px;
+  outline: none;
+  border: darkgray 1px solid;
+  border-radius: 5px;
+}
