@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import 
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(VueRouter)
+
 
 const routes = [
   {
@@ -27,4 +28,15 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default new Vuex.Store({
+  modules: {
+    userInfo: User,
+  },
+  plugins: [createPersistedState(
+    {
+      key: 'yourkey',  // 設定しなければ'vuex'
+      paths: ['userInfo'],  // 保存するモジュール：設定しなければ全部。
+      storage: window.sessionStorage,  // 設定しなければlocalStorage
+    }
+  )],
+})
